@@ -48,7 +48,7 @@ namespace CoinChange
 			for(int i=0;i<n+1;i++){
 				L[i,0]=1;
 			}
-			for(int j=0;j<sum+1;j++){
+			for(int j=1;j<sum+1;j++){
 				L[0,j]=0;
 			}
 			for(int i=1;i<n+1;i++){
@@ -60,7 +60,35 @@ namespace CoinChange
 					L[i,j]=withFirst+L[i-1,j];
 				}
 			}
+			ArrayList paths=new ArrayList();
+			Console.WriteLine(sum+" "+coins+" "+(coins.Length-1));
+			printPaths(L,sum, coins,coins.Length-1,paths);
 			return L[n,sum];
+		}
+		public static void printPaths(int[,] L, int sum, int []coins, int end,ArrayList paths){
+			
+			if(sum==0){
+				foreach(int i in paths){
+					Console.Write(i+" ");
+				}
+				Console.WriteLine();
+				return;
+			}
+			if(sum<0 || end<0){
+		
+				return;
+			}
+			
+			if(sum-coins[end]>=0 && L[end,sum-coins[end]]>=0){
+	
+				paths.Add(coins[end]);
+				printPaths(L,sum-coins[end],coins,end,paths);
+				paths.RemoveAt(paths.Count-1);
+				
+			}
+			printPaths(L,sum,coins,end-1,paths);
+			return;
+			
 		}
 		public static void Main(string[] args)
 		{
@@ -68,7 +96,7 @@ namespace CoinChange
 			
 			// TODO: Implement Functionality Here
 			int []coins={1,2,5,10};
-			int sum=20;
+			int sum=5;
 			ArrayList notes=new ArrayList();
 			Console.WriteLine(coinChangeRec(sum, coins,0,notes));
 			foreach(ArrayList x in notesAll){
