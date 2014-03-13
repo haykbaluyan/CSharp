@@ -1,0 +1,5 @@
+C:\Users\Apple\Documents\SharpDevelop Projects\DPalgorithms\Knapsack\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Apple\Documents\SharpDevelop Projects\DPalgorithms\Knapsack\bin\Debug\Knapsack.exe
+C:\Users\Apple\Documents\SharpDevelop Projects\DPalgorithms\Knapsack\bin\Debug\Knapsack.pdb
+C:\Users\Apple\Documents\SharpDevelop Projects\DPalgorithms\Knapsack\obj\Debug\Knapsack.exe
+C:\Users\Apple\Documents\SharpDevelop Projects\DPalgorithms\Knapsack\obj\Debug\Knapsack.pdb
