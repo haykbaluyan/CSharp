@@ -1,0 +1,5 @@
+C:\Users\Apple\Documents\SharpDevelop Projects\CoinChange\CoinChange\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Apple\Documents\SharpDevelop Projects\CoinChange\CoinChange\bin\Debug\CoinChange.exe
+C:\Users\Apple\Documents\SharpDevelop Projects\CoinChange\CoinChange\bin\Debug\CoinChange.pdb
+C:\Users\Apple\Documents\SharpDevelop Projects\CoinChange\CoinChange\obj\Debug\CoinChange.exe
+C:\Users\Apple\Documents\SharpDevelop Projects\CoinChange\CoinChange\obj\Debug\CoinChange.pdb
